@@ -1,7 +1,7 @@
 function generateMatrix() {
-    var arr = [];
+    let arr = [];
     for( let i = 0; i < 5; i++){
-        var min = [];
+        let min = [];
         for( let j = 0; j < 5; j++){
             min.push(Math.ceil(Math.random() * 10)) ;
         }
@@ -13,13 +13,13 @@ function generateMatrix() {
 
 function generateView() {
     
-    var arr = generateMatrix();
+    let arr = generateMatrix();
     let table = document.createElement("table");
     table.style.border = "solid #0000FF";
     let str = '';
-    for( var i = 0; i < 5; i++ ){
+    for( let i = 0; i < 5; i++ ){
         str += '<tr>';
-        for (var j = 0; j < 5; j++) {
+        for (let j = 0; j < 5; j++) {
             str += '<td>' + arr[i][j] + '</td>';
         }
         str += '</tr>';
